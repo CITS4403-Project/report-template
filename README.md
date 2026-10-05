@@ -73,3 +73,7 @@ within the page limit.
 1. Create a branch for your changes, for example `git checkout -b intro-background`.
 2. Commit in small, single-line commits with clear messages.
 3. Open a pull request for review before merging into `main`.
+
+## License
+
+Released under the [MIT License](LICENSE).
