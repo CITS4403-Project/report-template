@@ -1,9 +1,8 @@
-# CITS4403 Project Report
+# CITS4403 Report Template
 
-LaTeX source for the CITS4403 Computational Modelling research project report.
-This repository is included in the main project repository
-([CITS4403-Project/Project](https://github.com/CITS4403-Project/Project)) as
-the `report/` submodule.
+A LaTeX template for the CITS4403 Computational Modelling research project
+report (UWA). It provides a ready-to-build document with one file per report
+section, bibliography and figure scaffolding, and build rules for `latexmk`.
 
 ## Requirements
 
@@ -12,6 +11,21 @@ A LaTeX distribution that provides `latexmk` and `pdflatex`:
 - **Linux:** `sudo apt install latexmk texlive-latex-recommended texlive-latex-extra` (or the full TeX Live)
 - **macOS:** MacTeX
 - **Windows:** MiKTeX or TeX Live
+
+## Using this template
+
+Create your own repository from this template with the **Use this template**
+button on GitHub, or from the command line:
+
+```bash
+gh repo create <your-repo> --template CITS4403-Project/report-template --private
+```
+
+Alternatively, clone it directly:
+
+```bash
+git clone https://github.com/CITS4403-Project/report-template.git
+```
 
 ## Building
 
@@ -39,9 +53,9 @@ source changes before merging.
 +-- Makefile         % build rules
 ```
 
-The sections follow the assessment rubric in `RUBICS.md` of the main
-repository: background and research aims, originality and contribution, model
-specification, experimental design, results, and discussion/conclusions.
+The section files map onto the assessment criteria: background and research
+aims, originality and contribution, model specification, experimental design,
+results, and discussion/conclusions.
 
 ## Formatting requirements
 
@@ -53,15 +67,6 @@ From the unit specification:
 The preamble already sets `11pt` and 1-inch margins. Keep long derivations,
 extra figures and parameter tables in the appendix so the main body stays
 within the page limit.
-
-## Working with the submodule
-
-From the main project repository:
-
-```bash
-git submodule update --init report          # clone the report sources
-cd report && git checkout main && git pull  # pull the latest report changes
-```
 
 ## Workflow
 
